@@ -86,8 +86,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9k1-5e-AWP">
-                                <rect key="frame" x="0.0" y="-160" width="600" height="919"/>
+                                <rect key="frame" x="0.0" y="0.0" width="690" height="670"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="670" id="oKM-WL-iN0"/>
+                                    <constraint firstAttribute="width" constant="690" id="ynZ-9d-yw2"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7O-3a-4W2" customClass="FancyButton" customModule="FirebaseStarterPack" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="75" height="36"/>
@@ -149,9 +153,19 @@
                             <constraint firstItem="9k1-5e-AWP" firstAttribute="leading" secondItem="zdB-7T-FRI" secondAttribute="leadingMargin" constant="-20" id="Wum-D3-0xb"/>
                             <constraint firstItem="KQr-AV-pGz" firstAttribute="top" secondItem="9k1-5e-AWP" secondAttribute="bottom" constant="-159" id="iNI-Hj-HMl"/>
                             <constraint firstItem="f7O-3a-4W2" firstAttribute="leading" secondItem="zdB-7T-FRI" secondAttribute="leadingMargin" constant="-20" id="lFP-ra-Arg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9k1-5e-AWP" secondAttribute="trailing" constant="-110" id="qfZ-1j-fNz"/>
                             <constraint firstItem="KQr-AV-pGz" firstAttribute="top" secondItem="sWb-Cr-ao0" secondAttribute="bottom" constant="50" id="r1f-aR-QPm"/>
+                            <constraint firstItem="9k1-5e-AWP" firstAttribute="top" secondItem="zdB-7T-FRI" secondAttribute="topMargin" id="vK3-Rj-dCO"/>
                             <constraint firstItem="ZR3-D8-LUW" firstAttribute="centerX" secondItem="zdB-7T-FRI" secondAttribute="centerX" id="wGr-Ev-dlZ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ed5-7c-DBs"/>
+                                <exclude reference="SfQ-7n-xlz"/>
+                                <exclude reference="Wum-D3-0xb"/>
+                                <exclude reference="iNI-Hj-HMl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="countdownLabel" destination="ZR3-D8-LUW" id="87V-3o-GHp"/>

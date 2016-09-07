@@ -46,9 +46,10 @@ class VideoWriter {
         let horizontalRatio = size.width / image.size.width
         let verticalRatio = size.height / image.size.height
         //aspectRatio = max(horizontalRatio, verticalRatio) // ScaleAspectFill
-        let aspectRatio = min(horizontalRatio, verticalRatio) // ScaleAspectFit
+//        let aspectRatio = min(horizontalRatio, verticalRatio) // ScaleAspectFit
         
-        let newSize = CGSize(width: image.size.width * aspectRatio, height: image.size.height * aspectRatio)
+//        let newSize = CGSize(width: image.size.width * aspectRatio, height: image.size.height * aspectRatio)
+        let newSize = CGSize(width: image.size.width, height: image.size.height)
         
         let x = newSize.width < size.width ? (size.width - newSize.width) / 2 : 0
         let y = newSize.height < size.height ? (size.height - newSize.height) / 2 : 0
